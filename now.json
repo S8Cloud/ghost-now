@@ -1,0 +1,14 @@
+{
+    "name": "ghost",
+    "engines": {
+        "node": "8"
+    },
+    "env": {
+        "url": "https://example.com",
+        "NODE_ENV": "production"
+    },
+    "alias": [
+        "https://example.com",
+        "https://www.example.com"
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "server": {
+        "host": "127.0.0.1",
+        "port": 2368
+    },
+    "database": {
+        "client": "sqlite3",
+        "connection": {
+            "filename": "content/data/ghost.db"
+        },
+        "useNullAsDefault": true,
+        "debug": false
+    },
+    "mail": {
+        "transport": "Direct"
+    },
+    "useMinFiles": true,
+    "storage": {
+        "active": "LocalFileStorage"
+    },
+    "scheduling": {
+        "active": "SchedulingDefault"
+    },
+    "paths": {
+        "contentPath": "content"
+    },
+    "logging": {
+        "level": "error",
+        "rotation": {
+            "enabled": true,
+            "count": 15,
+            "period": "1d"
+        },
+        "transports": [
+            "file",
+            "stdout"
+        ]
+    },
+    "privacy": {
+        "useGravatar": false,
+        "useUpdateCheck": false
+    },
+    "spam": {
+        "user_login": {
+            "minWait": 600000,
+            "maxWait": 604800000,
+            "freeRetries": 4
+        },
+        "user_reset": {
+            "minWait": 3600000,
+            "maxWait": 3600000,
+            "lifetime": 3600,
+            "freeRetries": 4
+        },
+        "global_reset": {
+            "minWait": 3600000,
+            "maxWait": 3600000,
+            "lifetime": 3600,
+            "freeRetries":4
+        },
+        "global_block": {
+            "minWait": 3600000,
+            "maxWait": 3600000,
+            "lifetime": 3600,
+            "freeRetries":99
+        },
+        "private_block": {
+            "minWait": 3600000,
+            "maxWait": 3600000,
+            "lifetime": 3600,
+            "freeRetries":99
+        }
+    },
+    "caching": {
+        "frontend": {
+            "maxAge": 0
+        },
+        "301": {
+            "maxAge": 31536000
+        },
+        "customRedirects": {
+            "maxAge": 31536000
+        },
+        "favicon": {
+            "maxAge": 86400
+        },
+        "sitemap": {
+            "maxAge": 3600
+        },
+        "robotstxt": {
+            "maxAge": 3600000
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ghost",
+  "version": "1.0.0",
+  "description": "ghost-with-zeit",
+  "main": "index.js",
+  "author": "dcc",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "setup": "yarn install && cp -r node_modules/ghost/content .",
+    "deploy": "now --regions sfo --public && now alias && now rm ghost --safe --yes",
+    "clean": "rm -rf content node_modules yarn.lock"
+  },
+  "dependencies": {
+    "ghost": "latest"
+  }
+}
