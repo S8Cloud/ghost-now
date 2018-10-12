@@ -8,7 +8,7 @@ Ghost-now is a way for Serverless to deploy Ghost blogs.
 git clone https://github.com/S8Cloud/ghost-now.git && cd ghost-now
 ```
 4. **Modify `now.json` for `url` and `alias` for your domain**
-5. **Install dependencies `yarn setup`*
+5. **Install dependencies `yarn setup`**
 6. **Add your own files to `content` folder such as images or themes**
 7. **Tes development environment `npm run start`**
 8. **When you ready top deploy `yarn deploy`**
