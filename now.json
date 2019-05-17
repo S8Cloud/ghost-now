@@ -1,13 +1,17 @@
 {
     "name": "ghost-zeit",
-    "engines": {
-        "node": "8"
-    },
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@now/node"
+        }
+    ],
     "env": {
         "url": "https://ghost-zeit.now.sh",
         "NODE_ENV": "production"
     },
     "alias": [
-        "https://ghost-zeit.now.sh"
+        "ghost-zeit.now.sh"
     ]
 }
