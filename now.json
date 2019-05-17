@@ -1,14 +1,13 @@
 {
-    "name": "ghost",
+    "name": "ghost-zeit",
     "engines": {
         "node": "8"
     },
     "env": {
-        "url": "https://example.com",
+        "url": "https://ghost-zeit.now.sh",
         "NODE_ENV": "production"
     },
     "alias": [
-        "https://example.com",
-        "https://www.example.com"
+        "https://ghost-zeit.now.sh"
     ]
 }
